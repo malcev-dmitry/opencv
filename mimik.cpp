@@ -45,7 +45,7 @@ void search(IplImage* img)
 {
 	int i;
 	int radius;
-	double scale = 1.3;
+	double scale = 0.8;
 	IplImage* gray = cvCreateImage(cvSize(img->width,img->height), 8, 1);
 	IplImage* small_img = cvCreateImage(cvSize(cvRound(img->width/scale), cvRound(img->height/scale)), 8, 1);
 	cvCvtColor(img, gray, CV_BGR2GRAY);
